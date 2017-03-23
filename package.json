@@ -1,0 +1,22 @@
+{
+  "name": "pf9-status",
+  "version": "1.0.0",
+  "description": "Displays the status of Openstack api services on customers DU",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pf-status",
+    "pf9-health"
+  ],
+  "author": "Platform9",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "forever": "^0.15.3",
+    "locks": "^0.2.2",
+    "request": "^2.81.0"
+  }
+}
