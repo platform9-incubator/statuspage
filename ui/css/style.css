@@ -1,0 +1,32 @@
+#mainContainer {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.service-container {
+    padding: 20px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid grey;
+}
+
+.service-name {
+    float:left;
+    font-family: Avenir, sans-serif;
+}
+
+.service-status-up {
+    float:right;
+    border-radius: 10px;
+    background: limegreen;
+    width: 50px;
+    height: 20px;
+}
+
+.service-status-down {
+    float:right;
+    border-radius: 10px;
+    background: red;
+    width: 50px;
+    height: 20px;
+}
