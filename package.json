@@ -15,8 +15,8 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "forever": "^0.15.3",
     "locks": "^0.2.2",
+    "ping": "^0.2.2",
     "request": "^2.81.0"
   }
 }
