@@ -13,6 +13,7 @@ $(function () {
     });
     
     var ServicesCollection = Backbone.Collection.extend({
+        comparator: 'name',
         model: function(attrs, options) {
             return new ServiceObject(attrs);
         },
@@ -37,7 +38,8 @@ $(function () {
                 $.get(baseStatusUrl + data.attributes.url).then(function(innerData){
                     self.$el.append('<div class="service-container">' +
                         '<div class="service-name">' + data.attributes.name + '</div>' +
-                        '<div class="service-status-' + innerData + '"</div></div>');
+                        '<div class="service-status-' + innerData + '"</div>' +
+                        '<div class="service-description" data-toggle="popover" data-content="'+ data.attributes.description +'"></div></div>');
                 });
             });
         }
