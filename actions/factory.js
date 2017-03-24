@@ -42,11 +42,11 @@ services = [
         'description': 'Api service for cloud information'
     },
     {
-	'id': 'du',
-	'name': 'DU',
-        'url': '',
-	'description': 'Deployment unit (Controller pane for openstack services)',
-	'connectType': 'ping'
+	      'id': 'du',
+	      'name': 'DU',
+        'url': '/du',
+	      'description': 'Deployment unit (Controller pane for openstack services)',
+	      'connectType': 'ping'
     }
 ];
 

@@ -1,7 +1,6 @@
 "use strict";
 
 $(function () {
-    console.log("Hello World!");
     var hostname = document.location.hostname;
     var shortname = document.location.hostname.split('.')[1];
     var port = ":9000";
@@ -33,9 +32,7 @@ $(function () {
         },
         render: function () {
             var self = this;
-            console.log("Rendering ServicesListView");
-            console.log(this.collection);
-            // console.log(this.collection.models);
+            console.debug("Rendering ServicesListView");
             this.collection.each(function (data) {
                 $.get(baseStatusUrl + data.attributes.url).then(function(innerData){
                     self.$el.append('<div class="service-container">' +
@@ -47,7 +44,7 @@ $(function () {
     });
     var ServiceObjectView = Backbone.View.extend({
         render: function () {
-            console.log("Rendering ServiceObjectView");
+            console.debug("Rendering ServiceObjectView");
             var self = this;
             this.model.getStatus().then(function (data) {
                 self.$el.append('<div class="service-container">' +
